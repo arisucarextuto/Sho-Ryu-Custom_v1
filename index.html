@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sho Ryo Custom | メカニック採用・店舗案内</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <h1>SHO RYO CUSTOM</h1>
+      <p class="subtitle">最高のチューニングとカスタムを、すべてのドライバーへ。</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 店舗案内 -->
+    <section class="card">
+      <h2>🛠️ 店舗について</h2>
+      <p>「Sho Ryo Custom」は、エンジンチューニングから外装カスタム、緊急修理まで幅広く対応するメカニックショップです。車好きの仲間と一緒に街一番のガレージを作り上げませんか？</p>
+      <div class="info-grid">
+        <div class="info-item">
+          <strong>主な業務内容</strong>
+          <span>車両修理・カスタム塗装・パーツ取付・出張修理</span>
+        </div>
+        <div class="info-item">
+          <strong>歓迎する人物像</strong>
+          <span>車が好き・接客が丁寧・報告連絡相談ができる方</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 募集要項 -->
+    <section class="card">
+      <h2>📋 募集要項</h2>
+      <ul class="req-list">
+        <li><strong>募集職種：</strong>メカニックスタッフ（見習い・経験者ともに歓迎）</li>
+        <li><strong>応募資格：</strong>住民登録済みの方 / Discordでの連絡が可能な方</li>
+        <li><strong>勤務シフト：</strong>自由シフト制（週1回・短時間からでもOK）</li>
+        <li><strong>待遇・給与：</strong>歩合制＋基本給あり（経験・スキルに応じて昇給）</li>
+      </ul>
+    </section>
+
+    <!-- 応募フォーム -->
+    <section class="card form-section">
+      <h2>📥 メカニック応募フォーム</h2>
+      <p class="form-note">送信された内容は店舗管理者のDiscordへ直接届きます。</p>
+
+      <form id="recruitForm">
+        <div class="form-group">
+          <label for="rpName">住民名（キャラクター名） <span class="req">*</span></label>
+          <input type="text" id="rpName" placeholder="例：山田 太郎" required>
+        </div>
+
+        <div class="form-group">
+          <label for="discordId">Discord ユーザー名 <span class="req">*</span></label>
+          <input type="text" id="discordId" placeholder="例：taro_1234" required>
+        </div>
+
+        <div class="form-group">
+          <label for="experience">メカニック経験 <span class="req">*</span></label>
+          <select id="experience" required>
+            <option value="未経験（初心者）">未経験（初心者）</option>
+            <option value="他店での経験あり">他店での経験あり</option>
+            <option value="カスタム知識あり">カスタム知識あり</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="activeTime">主な活動時間帯 <span class="req">*</span></label>
+          <input type="text" id="activeTime" placeholder="例：平日 21:00〜25:00 / 土日終日" required>
+        </div>
+
+        <div class="form-group">
+          <label for="pr">志望動機・自己PR <span class="req">*</span></label>
+          <textarea id="pr" rows="4" placeholder="好きな車種や意気込みなどをご記入ください。" required></textarea>
+        </div>
+
+        <button type="submit" id="submitBtn" class="btn-submit">応募内容を送信する</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Sho Ryo Custom. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
