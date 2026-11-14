@@ -1,5 +1,5 @@
 // ▼ Cloudflare Workersで発行されたURLを設定してください
-const WORKER_URL = "https://your-worker-subdomain.workers.dev";
+const WORKER_URL = "https://sho-ryu-custom-v1.pages.dev/";
 
 document.getElementById("recruitForm").addEventListener("submit", async function (e) {
   e.preventDefault();
